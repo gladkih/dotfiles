@@ -1,0 +1,38 @@
+[user]
+	name = Maxim Gladkih
+	email = mail@gladkih.su
+
+[color]
+        ui = true
+
+[color "diff"]
+	meta = blue
+	frag = white
+	old = red bold
+	new = green bold
+
+[credential]
+        helper = cache --timeout=3600
+[core]
+	editor = vim
+	excludesfile = /home/faust/.gitignore
+
+[alias]
+	a = add
+	ua = reset HEAD
+	b = branch
+	c = commit
+	ca = commit -a
+	cm = commit -m
+	cam = commit -am
+	co = checkout
+	d = diff --color-words
+	s = status -sb
+	l = log --graph --pretty=format:'%C(magenta)%h%C(blue)%d%Creset %s %C(blue bold)- %an, %ar%Creset'
+	ll = log --stat --abbrev-commit
+	lg = log --graph --full-history --all --color --pretty=format:'%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s'
+
+[push]
+	default = current
+
+
