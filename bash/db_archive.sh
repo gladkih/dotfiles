@@ -1,6 +1,6 @@
 #!/bin/bash
-db_login="login"
-db_password="password"
+db_login="root"
+db_password="masterkey"
 db_host="localhost"
 backup_dir="/home/mysql_backup"
 
