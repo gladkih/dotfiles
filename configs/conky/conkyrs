@@ -1,0 +1,74 @@
+onky, a system monitor, based on torsmo
+#
+# Any original torsmo code is licensed under the BSD license
+#
+# All code written since the fork of torsmo is licensed under the GPL
+#
+# Please see COPYING for details
+#
+# Copyright (c) 2004, Hannu Saransaari and Lauri Hakkarainen
+# Copyright (c) 2005-2010 Brenden Matthews, Philip Kovacs, et. al. (see AUTHORS)
+# All rights reserved.
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+alignment top_right
+default_color 26211F    # grey 5f5f5f 3F3F3F 183149 3B3B3B 26211F
+double_buffer yes
+draw_borders no
+draw_outline no
+draw_shades no
+gap_x 10 
+gap_y 30
+maximum_width 170
+minimum_size 120
+no_buffers yes
+override_utf8_locale yes
+own_window yes
+own_window_title conky
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_transparent yes
+own_window_type normal  ## normal /override /desktop
+text_buffer_size 8000
+total_run_times 0
+update_interval 1
+uppercase no
+use_xft yes
+xftalpha 1
+xftfont Freesans:pixelsize=16
+
+TEXT
+${voffset 10}${font Blue Highway:pixelsize=16}${alignc}${time %A} | ${time %d} ${time  %B} ${time %Y}${font}
+$hr${voffset -8}
+${font Poky:pixelsize=24}P${font} ${voffset -5}${alignc 10} ${font}
+${font Blue Highway:pixelsize=16}CPU:                                ${cpu}%
+RAM:                          ${mem}
+$hr${voffset -8}
+${font Poky:pixelsize=24}Top${font} ${voffset -2}${alignc 10}
+${font Blue Highway:pixelsize=16}${top name 1}$alignr${top cpu 1}
+${top name 2}$alignr${top cpu 2}
+${top name 3}$alignr${top cpu 3}
+${top name 4}$alignr${top cpu 4}
+$hr${voffset -8}
+${font Poky:pixelsize=24}Wlan${font} ${voffset -2}${alignc 10}
+${font Blue Highway:pixelsize=16}Wlan:                               ${wireless_link_qual wlan0}%
+Ip:                        ${addr wlan0}${voffset 2}
+${font Blue Highway:pixelsize=16}Networking: 
+Up ${upspeed wlan0} — Down ${downspeed wlan0}${font}
+$hr${voffset -8}
+${font Poky:pixelsize=24}Uptime${font} ${voffset -2}${alignc 10}
+${font Blue Highway:pixelsize=16}$uptime${font}
+$hr${voffset -8}
+${font Poky:pixelsize=24}Swap${font} ${voffset -2}${alignc 10}
+${font Blue Highway:pixelsize=16}$swap/$swapmax - $swapperc% ${swapbar 4}{font}
