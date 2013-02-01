@@ -24,5 +24,5 @@ alias ls='ls -lAh --color'
 alias ls.='ls -dAh .* --color=auto'
 
 # Ubuntu update, apt, upgrade
-alias upgrade='apt-get update && apt-get upgrade && apt-get clean'
+alias upgrade='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
 
