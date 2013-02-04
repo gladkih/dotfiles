@@ -13,6 +13,7 @@ alias prj='cd ~/work/project/'
 alias dwl='cd ~/Downloads/'
 alias wrk='cd ~/work/'
 alias +x='chmod +x'
+alias e='vim'
 
 # Show active network listeners
 alias netlisteners='lsof -i -P | grep LISTEN'
