@@ -11,11 +11,16 @@
 	old = red bold
 	new = green bold
 
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
 [credential]
         helper = cache --timeout=3600
 [core]
 	editor = vim
-	excludesfile = /home/faust/.gitignore
+	excludesfile = ~/.gitignore
 
 [alias]
 	a = add
