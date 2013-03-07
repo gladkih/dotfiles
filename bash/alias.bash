@@ -7,13 +7,18 @@ alias ...='cd ../../'
 alias ....='cd ../../../'
 alias .....='cd ../../../../'
 alias ......='cd ../../../../../'
+alias ~='cd ~'
+alias --='cd -'
 
-# Shortcuts
+# Link
 alias prj='cd ~/work/project/'
 alias dwl='cd ~/Downloads/'
 alias wrk='cd ~/work/'
+
+# Shortcuts
 alias +x='chmod +x'
 alias e='vim'
+alias cleanup='rm -rf ~/.local/share/Trash/files/* ~/.local/share/Trash/info/* rm -rf ~/.Trash/*'
 
 # Show active network listeners
 alias netlisteners='lsof -i -P | grep LISTEN'
