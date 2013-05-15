@@ -8,11 +8,11 @@ alias ....='cd ../../../'
 alias .....='cd ../../../../'
 alias ......='cd ../../../../../'
 alias ~='cd ~'
-alias --='cd -'
 
 # Link
 alias prj='cd ~/work/project/'
 alias dwl='cd ~/Downloads/'
+alias drp='cd ~/Dropbox/'
 alias wrk='cd ~/work/'
 
 # Shortcuts
