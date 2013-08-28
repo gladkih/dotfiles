@@ -63,3 +63,24 @@ ssh-key() {
     cat "$file" | c
     echo "Your public key copied to clipboard."
 }
+
+low-case() {
+    if [ $1 -eq 1 ]; then
+        FROM="abcdefghijklmnopqrstuvwxyz"
+        TO="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    else
+        FROM="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        TO="abcdefghijklmnopqrstuvwxyz"
+    fi
+    find -type f | sed '
+        h
+        G
+        s,^\(.*/\).*$,\1,
+        x
+        s,^.*/\(.*\)$,\1,
+        y/'$FROM'/'$TO'/
+        H
+        x
+        s,^\(.*\)\n\(.*\)\n\(.*\)$,mv "\1" "\2\3",
+    ' | sh
+}
