@@ -10,10 +10,12 @@ alias ......='cd ../../../../../'
 alias ~='cd ~'
 
 # Link
-alias prj='cd ~/work/project/'
 alias dwl='cd ~/Downloads/'
 alias drp='cd ~/Dropbox/'
 alias wrk='cd ~/work/'
+
+alias show='defaults write com.apple.finder AppleShowAllFiles -bool true'
+alias hide='defaults write com.apple.finder AppleShowAllFiles -bool false'
 
 # Shortcuts
 alias +x='chmod +x'
