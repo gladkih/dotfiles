@@ -18,9 +18,7 @@ alias show='defaults write com.apple.finder AppleShowAllFiles -bool true'
 alias hide='defaults write com.apple.finder AppleShowAllFiles -bool false'
 
 # Shortcuts
-alias +x='chmod +x'
-alias e='vim'
-alias cleanup='rm -rf ~/.local/share/Trash/files/* ~/.local/share/Trash/info/* rm -rf ~/.Trash/*'
+alias cleanup='find . -name "*.DS_Store" -type f -delete'
 
 # Show active network listeners
 alias netlisteners='lsof -i -P | grep LISTEN'
