@@ -84,3 +84,16 @@ low-case() {
         s,^\(.*\)\n\(.*\)\n\(.*\)$,mv "\1" "\2\3",
     ' | sh
 }
+# Down and up internet speed
+function downspeed() {
+    if [ -f $1 ] ; then
+        sudo ipfw pipe 1 config bw "$1"Kbit/s delay 200ms
+    else
+        sudo ipfw pipe 1 config bw 128Kbit/s delay 200ms
+    fi
+    sudo ipfw add 1 pipe 1 src-port 80
+}
+
+function upspeed() {
+    sudo ipfw flush
+}
