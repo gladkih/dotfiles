@@ -25,45 +25,6 @@ extract () {
     fi
 }
 
-# Count number of selectors in a CSS file
-csscount() {
-    cnt=0
-    depth=0
-    while read -n 1 char; do
-        case $char in
-            "{")
-                ((depth++))
-                ;;
-            "}")
-                ((depth--))
-                if [ "$depth" -eq "0" ]; then
-                    ((cnt++))
-                fi
-                ;;
-            ",")
-                ((cnt++))
-                ;;
-        esac
-    done
-    echo $cnt
-}
-
-# Password generator
-password() {
-    openssl rand -base64 ${1:-8}; 
-}
-
-# Copy public SSH key to clipboard. Generate it if necessary
-ssh-key() {
-    file="$HOME/.ssh/id_rsa.pub"
-    if [ ! -f "$file" ]; then
-        ssh-keygen -t rsa
-    fi
-
-    cat "$file" | c
-    echo "Your public key copied to clipboard."
-}
-
 low-case() {
     if [ $1 -eq 1 ]; then
         FROM="abcdefghijklmnopqrstuvwxyz"
