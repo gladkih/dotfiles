@@ -14,9 +14,13 @@ alias dwl='cd ~/Downloads/'
 alias drp='cd ~/Dropbox/'
 alias wrk='cd ~/work/'
 
-# Show/hide hidden files
-alias show='defaults write com.apple.finder AppleShowAllFiles -bool true'
-alias hide='defaults write com.apple.finder AppleShowAllFiles -bool false'
+# Show/hide hidden files in Finder
+alias show='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'
+alias hide='defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder'
+
+# Hide/show all desktop icons (useful when presenting)
+alias hidedesktop='defaults write com.apple.finder CreateDesktop -bool false && killall Finder'
+alias showdesktop='defaults write com.apple.finder CreateDesktop -bool true && killall Finder'
 
 #Clean
 alias cleanup='find . -name "*.DS_Store" -type f -delete'
@@ -25,15 +29,12 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 # Shortcuts
 alias cleanup='find . -name "*.DS_Store" -type f -delete'
 
-# Show active network listeners
-alias netlisteners='lsof -i -P | grep LISTEN'
-
 # List files in human readable format with color and without implied directories
-alias ls='ls -lAh --color'
+alias ls='ls -lAh'
 
 # Show hidden files only
-alias ls.='ls -dAh .* --color=auto'
+alias ls.='ls -dAh .*'
 
-# Ubuntu update, apt, upgrade
-alias upgrade='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
-
+# Kill all the tabs in Chrome to free up memory
+# [C] explained: http://www.commandlinefu.com/commands/view/402/exclude-grep-from-your-grepped-output-of-ps-alias-included-in-description
+alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
