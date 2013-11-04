@@ -4,6 +4,7 @@ VENV
 
 # Folder view configuration files
 Desktop.ini
+.DS_Store
 
 # Thumbnail cache files
 ._*
