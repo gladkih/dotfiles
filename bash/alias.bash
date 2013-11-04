@@ -14,8 +14,13 @@ alias dwl='cd ~/Downloads/'
 alias drp='cd ~/Dropbox/'
 alias wrk='cd ~/work/'
 
+# Show/hide hidden files
 alias show='defaults write com.apple.finder AppleShowAllFiles -bool true'
 alias hide='defaults write com.apple.finder AppleShowAllFiles -bool false'
+
+#Clean
+alias cleanup='find . -name "*.DS_Store" -type f -delete'
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
 # Shortcuts
 alias cleanup='find . -name "*.DS_Store" -type f -delete'
