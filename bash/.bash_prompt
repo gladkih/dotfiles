@@ -18,7 +18,7 @@ RESET="\033[m"
 BOLD="$(tput bold)"
 
 # color bash
-export PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]at \[$ORANGE\]\h \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$WHITE\]\n\$ \[$RESET\]"
+export PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]🍺  \[$ORANGE\]\h \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \": \") \[$RESET\]\n"
 export PS2="\[$ORANGE\]→ \[$RESET\]"
 
 # Jump back n directories at a time
@@ -37,6 +37,9 @@ alias dwl='cd ~/Downloads/'
 alias drp='cd ~/Dropbox/'
 alias wrk='cd ~/work/'
 alias igr='cd ~/work/germes/igrosoft/dev'
+
+# Concat image
+alias sprite='montage *.png -tile 1 -geometry +0+0'
 
 # Ping
 alias pr='ping 192.168.1.1'
