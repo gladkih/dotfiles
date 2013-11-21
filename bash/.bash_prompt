@@ -18,7 +18,7 @@ RESET="\033[m"
 BOLD="$(tput bold)"
 
 # color bash
-export PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]🍺  \[$ORANGE\]\h \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \": \") \[$RESET\]\n"
+export PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]👾  \[$ORANGE\]\h \[$GREEN\]\w\[$WHITE\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \": \") \[$RESET\]\n\[$GREEN\]>$RESET"
 export PS2="\[$ORANGE\]→ \[$RESET\]"
 
 # Jump back n directories at a time
@@ -99,6 +99,12 @@ function upspeed() {
 halu=(Tungjatjeta Hello Ahlen Marhaba Voghdzuyin Shlama Pryvitani Nomoskaar Zdraveite Zdravo Chao Aloha Hallo Gamardjobat Shalom Iiti Sawubona Salam Selamat Mendvt Terveh Mauri Haa Mej Ave Sveiki Sveikas Moien Zdravo Shumbrat Sawubona Goddag Ola Kails Buna Zdravstvuite Zdravo Dobry Sawatdi Isenmesez Merhaba Pryvit Paivaa Bonjour Namaste Zdravo Salam Saluton Tervist)
 cnt=$(w -h | grep "^$(whoami) *s[^ ]* *-"|wc -l)
 if [ $cnt == 1 ]; then
-	echo -e $GREEN ${halu[RANDOM % 49]}$RESET,$MAGENTA $(whoami).
-	echo -e
+	echo -e $GREEN " Hostname"$RESET: `hostname`$RESET
+	echo -e $GREEN "  Inet IP"$RESET: `ip`$RESET
+	echo -e $GREEN " Local IP"$RESET: `ifconfig en0 inet | grep 'inet ' | awk ' { print $2 } '`
+	echo -e $GREEN "   Uptime"$RESET: `uptime | awk -F 'up ' '{ print $2 }' | awk -F ',' '{ print $1 }'`
+	echo -e $GREEN "SSD usage"$RESET: `df / | awk '{print $5}' | grep "%"`
+	echo ""
+	echo -e $GREEN ${halu[RANDOM % 49]}$RESET,$MAGENTA $(whoami)$RESET.
 fi
+echo -e $GREEN "Date"$RESET: `date | awk '{print $2 " " $3 " " $4 " " $6}'`
