@@ -46,8 +46,8 @@ alias pr='ping 192.168.1.1'
 alias py='ping ya.ru'
 
 # Show/hide hidden files in Finder
-alias show='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'
-alias hide='defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder'
+alias show='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder && chflags hidden ~/Public/ && chflags hidden ~/Desktop/'
+alias hide='defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder && chflags nohidden ~/Public/ && chflags nohidden ~/Desktop/'
 
 # Hide/show all desktop icons (useful when presenting)
 alias hidedesktop='defaults write com.apple.finder CreateDesktop -bool false && killall Finder'
