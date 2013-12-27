@@ -38,8 +38,11 @@ alias drp='cd ~/Dropbox/'
 alias wrk='cd ~/work/'
 alias igr='cd ~/work/germes/igrosoft/dev'
 
-# Concat image
+# Concat image — need imagemagick
 alias sprite='montage *.png -tile 1 -geometry +0+0'
+alias resize='mogrify -resize'
+#Img optimization — need imageoptim
+alias imgopt='imageoptim -a -j -q -d'
 
 # Ping
 alias pr='ping 192.168.1.1'
