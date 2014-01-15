@@ -43,6 +43,10 @@ alias sprite='montage *.png -tile 1 -geometry +0+0'
 alias resize='mogrify -resize'
 #Img optimization — need imageoptim
 alias imgopt='imageoptim -a -j -q -d'
+#Create sprite (need glue)
+function sprite-g() {
+	glue "$1" "$1"-res --namespace ''
+}
 
 # Ping
 alias pr='ping 192.168.1.1'
