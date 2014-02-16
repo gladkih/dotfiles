@@ -111,6 +111,7 @@
 
 
 ## Misc
+* [Keka](http://www.kekaosx.com/ru/)
 
 * [MPlayerX](http://mplayerx.org/download.html)
 
