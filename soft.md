@@ -23,9 +23,13 @@
 
 * [PGAdmin](http://www.pgadmin.org/download/macosx.php)
 
-* [TextWrangler](http://www.barebones.com/products/textwrangler/)
-
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+
+* [Cakebrew](https://www.cakebrew.com/)
+
+* [Codebox](https://www.codebox.io/)
+
+* [SourceTree](http://www.sourcetreeapp.com/)
 
 
 ## Writing
@@ -93,6 +97,8 @@
 
 * [Chrome](https://www.google.com/intl/en/chrome/browser/)
 
+* [Chromium](http://www.chromium.org/)
+
 * [Firefox](http://www.mozilla.org/en-US/firefox/new/)
 
 * [Opera](http://www.opera.com/download/)
@@ -117,6 +123,8 @@
 
 * [Spotify](https://www.spotify.com/us/download/mac/)
 
+* [Vox](https://itunes.apple.com/ru/app/vox/id461369673)
+
 * [CleanMyMac](http://macpaw.com/cleanmymac)
 
 * [DaisyDisk](http://www.daisydiskapp.com/)
@@ -126,3 +134,9 @@
 * [OpenEmu](http://openemu.org/)
 
 * [BookReader](https://itunes.apple.com/app/bookreader/id448943039)
+
+* [Battery Diag](https://itunes.apple.com/ru/app/battery-diag/id836505650)
+
+* [PCKeyboardHack](https://pqrs.org/macosx/keyremap4macbook/pckeyboardhack.html.en)
+
+* [KeyRemap4Mac](https://pqrs.org/macosx/keyremap4macbook/index.html.en£)
