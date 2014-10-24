@@ -17,11 +17,7 @@
 
 * [Color Snapper](https://itunes.apple.com/ru/app/colorsnapper/id418176775?mt=12)
 
-* [JSON Accelerator](https://itunes.apple.com/ru/app/json-accelerator/id511324989?l=en&mt=12)
-
 * [FontPrep](http://fontprep.com/)
-
-* [PGAdmin](http://www.pgadmin.org/download/macosx.php)
 
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 
@@ -31,6 +27,7 @@
 
 * [SourceTree](http://www.sourcetreeapp.com/)
 
+* [Sequel Pro](http://www.sequelpro.com/)
 
 ## Writing
 
@@ -47,8 +44,6 @@
 * [Dropbox](https://www.dropbox.com/install)
 
 * [Copy](https://www.copy.com/install/)
-
-* [SkyDrive](https://itunes.apple.com/us/app/skydrive/id522548761)
 
 * [Evernote](https://itunes.apple.com/ru/app/evernote/id406056744?mt=12)
 
@@ -72,6 +67,12 @@
 
 * [F.lux](http://justgetflux.com/)
 
+* [Desktime](http://desktime.com)
+
+* [Focus](http://heyfocus.com/)
+
+* [Pomodoro One](https://itunes.apple.com/us/app/pomodoro-one/id907364780)
+
 ## Graphics
 
 * Adobe Photoshop
@@ -90,14 +91,11 @@
 
 * [JpegMini](http://www.jpegmini.com/mac) 
 
-* [xScope](http://xscopeapp.com/)
-
+* [Picasa](http://picasa.google.com/)
 
 ## Network
 
 * [Chrome](https://www.google.com/intl/en/chrome/browser/)
-
-* [Chromium](http://www.chromium.org/)
 
 * [Firefox](http://www.mozilla.org/en-US/firefox/new/)
 
@@ -115,8 +113,10 @@
 
 * [Tweetbot](https://itunes.apple.com/ru/app/tweetbot-for-twitter/id557168941)
 
+* [TeamView](http://www.teamviewer.com/ru/index.aspx)
 
 ## Misc
+
 * [Keka](http://www.kekaosx.com/ru/)
 
 * [MPlayerX](http://mplayerx.org/download.html)
@@ -126,8 +126,6 @@
 * [Vox](https://itunes.apple.com/ru/app/vox/id461369673)
 
 * [CleanMyMac](http://macpaw.com/cleanmymac)
-
-* [DaisyDisk](http://www.daisydiskapp.com/)
 
 * [Gemini](https://itunes.apple.com/us/app/gemini-the-duplicate-finder/id463541543)
 
@@ -139,4 +137,6 @@
 
 * [PCKeyboardHack](https://pqrs.org/macosx/keyremap4macbook/pckeyboardhack.html.en)
 
-* [KeyRemap4Mac](https://pqrs.org/macosx/keyremap4macbook/index.html.en£)
+* [KeyRemap4Mac](https://pqrs.org/macosx/keyremap4macbook/index.html.en)
+
+* [Anki](http://ankisrs.net/)

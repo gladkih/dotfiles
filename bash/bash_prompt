@@ -36,21 +36,83 @@ alias quit='killall -9'
 alias dwl='cd ~/Downloads/'
 alias drp='cd ~/Dropbox/'
 alias wrk='cd ~/work/'
-alias igr='cd ~/work/germes/igrosoft/dev'
 
-# Concat image — need imagemagick
-alias sprite='montage *.png -tile 1 -geometry +0+0'
+# Concat image
 alias resize='mogrify -resize'
-#Img optimization — need imageoptim
+#Img optimization
 alias imgopt='imageoptim -a -j -q -d'
 #Create sprite (need glue)
 function sprite-g() {
-	glue "$1" "$1"-res --namespace ''
+	glue "$1" "$1"-res --namespace '' --scss --padding=0 --margin=3
+}
+function sprite-g-retina() {
+	glue "$1" "$1"-res --namespace '' --scss --padding=0 --margin=3 --retina
+}
+
+function sprite() {
+	montage -background none ./$1/*.png -tile 1 -geometry +0+0 $1.png
+}
+
+function crop() {
+	convert "$1" -crop 150x150 parts-%02d.jpg
+}
+
+# Удаление каждого второго файла
+# Входной параметр — номер первой и последней папки
+function rm-files() {
+	for (( i=$1; i<=$2; i++))
+	do
+		cd $i
+		n=1
+		for file in ./*.png; do
+		   test $n -eq 0 && rm "$file"
+		   n=$((n+1))
+		   n=$((n%2))
+		done
+		cd ..
+	done
+	
+}
+
+# Создание спрайтов
+function mass-sprite() {
+	for (( i=$1; i<=$2; i++))
+	do
+	   montage -background none ./$i/*.png -tile 1 -geometry +0+0 $i.png
+	done
+}
+
+# Перемещение файлов по директория
+function mass-replace() {
+	for (( i=$1; i<=$2; i++))
+	do
+	   mkdir "$i" && mv $i.jpg ./$i
+	done
+}
+
+#
+function mass-crop() {
+	for (( i=$1; i<=$2; i++))
+	do
+	   cd "$i"
+	   convert "$i".jpg -crop 150x150 parts-%02d.jpg
+	   cd ..
+	done
+}
+
+function up() {
+	softwareupdate -i -a
+	brew update --rebase
+	brew upgrade
+	brew upgrade brew-cask
+	brew cleanup -s --force
+	npm update npm -g
+	npm update -g
 }
 
 # Ping
 alias pr='ping 192.168.1.1'
-alias py='ping ya.ru'
+alias py='ping 8.8.8.8'
 
 # Show/hide hidden files in Finder
 alias show='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder && chflags nohidden ~/Public/ ~/Desktop/ ~/Applications/'
@@ -87,19 +149,6 @@ function parse_git_dirty() {
 
 function parse_git_branch() {
 	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\1$(parse_git_dirty)/"
-}
-# Speed control
-function downspeed() {
-	if [ -f $1 ] ; then
-    	sudo ipfw pipe 1 config bw "$1"Kbit/s delay 200ms
-    else
-    	sudo ipfw pipe 1 config bw 128Kbit/s delay 200ms
-    fi
-    sudo ipfw add 1 pipe 1 src-port 80
-}
-
-function upspeed() {
-	sudo ipfw flush
 }
 
 # Halu random
