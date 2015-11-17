@@ -1,0 +1,105 @@
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/max/.oh-my-zsh
+
+set guifont=Menlo\ for\ Powerline
+export SASS_LIBSASS_PATH=/Users/max/work/libsass
+ #Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="meritt"
+
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+DISABLE_AUTO_UPDATE="true"
+plugins=(git cloudapp node npm bower brew osx extract z mercurial)
+
+# User configuration
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/ImageMagick/bin"
+source $ZSH/oh-my-zsh.sh
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+# ssh
+export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+#Aliases
+alias nw="/Applications/nwjs.app/Contents/MacOS/nwjs"
+alias py="ping 8.8.8.8"
+alias pr="ping 192.168.1.1"
+
+#Unused dir
+alias hidedir="chflags hidden ~/Applications ~/Desktop ~/Public"
+
+#Show/hide hidden files in Finder
+alias show='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder && chflags nohidden ~/Public/ ~/Desktop/ ~/Applications/'
+alias hide='defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder && hidedir'
+
+#Hide/show all desktop icons (useful when presenting)
+alias hidedesktop='defaults write com.apple.finder CreateDesktop -bool false && killall Finder'
+alias showdesktop='defaults write com.apple.finder CreateDesktop -bool true && killall Finder'
+
+#Clean
+alias cleanup='find . -name "*.DS_Store" -type f -delete'
+alias removepart='find . -name "*.part" -type f -delete'
+alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+
+#Jump back n directories at a time
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
+alias ......='cd ../../../../../'
+alias ~='cd ~'
+
+#Kill app
+alias quit='killall -9'
+
+#Link
+alias dwl='cd ~/Downloads/'
+alias drp='cd ~/Dropbox/'
+alias wrk='cd ~/Documents/Work/'
+alias rmt='cd ~/Documents/Work/remote'
+
+# List files in human readable format with color and without implied directories
+alias ls='ls -lGFh -G'
+
+#Show hidden files only
+alias ls.='ls -dAh .*'
+
+#Concat image
+alias resize='mogrify -resize'
+
+#Img optimization
+alias imgopt='imageoptim -a -j -q -d'
+
+#Create sprite (need glue)
+function sprite-g() {
+  glue "$1" "$1"-res --namespace '' --scss --padding=0 --margin=3
+}
+function sprite-g-retina() {
+  glue "$1" "$1"-res --namespace '' --scss --padding=0 --margin=3 --retina
+}
+function sprite() {
+  montage -background none ./$1/*.png -tile 1 -geometry +0+0 $1.png
+}
+function crop() {
+  convert "$1" -crop 150x150 parts-%02d.jpg
+}
+
+#Удаления файлов по маске
+function rm-mask() {
+  find . -name "*.$1" -type f -delete
+}
+
+#Find shorthand
+function f() {
+  find . -name "$1" 2>/dev/null
+}

@@ -3,11 +3,14 @@
 ## Development
 
 * [Sublime Text 3](http://www.sublimetext.com/3)
-  * [Package Control](http://wbond.net/sublime_packages/package_control)
-  * [Theme Spacefunk](https://sublime.wbond.net/packages/Theme%20-%20Spacefunk) (Blue Monday)
-  * [Emmet](https://github.com/sergeche/emmet-sublime)
-  * [Hayaku Bundle](https://github.com/hayaku/hayaku)
-  * [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements)
+
+* [Package Control](http://wbond.net/sublime_packages/package_control)
+
+* [Emmet](https://github.com/sergeche/emmet-sublime)
+
+* [Hayaku Bundle](https://github.com/hayaku/hayaku)
+
+* [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements)
 
 * [WebStorm](http://www.jetbrains.com/webstorm/)
 
@@ -23,11 +26,15 @@
 
 * [Cakebrew](https://www.cakebrew.com/)
 
-* [Codebox](https://www.codebox.io/)
-
 * [SourceTree](http://www.sourcetreeapp.com/)
 
-* [Sequel Pro](http://www.sequelpro.com/)
+* [Docker](https://www.docker.com/)
+
+* [JSON Accelerator](https://itunes.apple.com/ru/app/json-accelerator/id511324989?l=en&mt=12)
+
+* [Audacity](http://audacityteam.org/download/?lang=ru)
+
+* [Versions](http://versionsapp.com/)
 
 ## Writing
 
@@ -45,7 +52,7 @@
 
 * [Copy](https://www.copy.com/install/)
 
-* [Evernote](https://itunes.apple.com/ru/app/evernote/id406056744?mt=12)
+* [Alternote](https://itunes.apple.com/ru/app/alternote-beautiful-note-taking/id974971992?l=en&mt=12)
 
 * [Things](https://itunes.apple.com/ru/app/things/id407951449?mt=12)
 
@@ -55,31 +62,27 @@
 
 * [The Archive Browser](https://itunes.apple.com/ru/app/the-archive-browser/id510232205?l=en&mt=12)
 
-* [CopyLess](https://itunes.apple.com/ru/app/copyless/id416439303?mt=12)
-
 * [Day one](https://itunes.apple.com/us/app/day-one/id422304217?mt=12)
 
 * [Typography Keyboard Layout](http://ilyabirman.net/typography-layout/)
 
 * [iTerm2](http://www.iterm2.com/#/section/home)
 
-* [Mac Informer](http://macdownload.informer.com/landing/)
-
 * [F.lux](http://justgetflux.com/)
 
-* [Desktime](http://desktime.com)
-
-* [Focus](http://heyfocus.com/)
-
 * [Pomodoro One](https://itunes.apple.com/us/app/pomodoro-one/id907364780)
+
+* [Better Rename 9](https://itunes.apple.com/ru/app/better-rename-9/id414209656?l=en&mt=12)
+
+* [Toggl](https://toggl.com/)
+
+* [XMind](https://www.xmind.net/)
 
 ## Graphics
 
 * Adobe Photoshop
 
 * [LilyView](http://lilyviewapp.com/)
-
-* [F-Stop](http://www.zamioware.com/Flicker1/Home.html)
 
 * [PNGyu](http://nukesaq88.github.io/Pngyu/)
 
@@ -89,9 +92,7 @@
 
 * [ImageMagick](http://www.imagemagick.org/script/binary-releases.php#macosx)
 
-* [JpegMini](http://www.jpegmini.com/mac) 
-
-* [Picasa](http://picasa.google.com/)
+* [JpegMini](http://www.jpegmini.com/mac)
 
 ## Network
 
@@ -101,13 +102,9 @@
 
 * [Opera](http://www.opera.com/download/)
 
-* [Airmail](https://itunes.apple.com/ru/app/id573171375)
-
 * [ForkLift](https://itunes.apple.com/ru/app/forklift-file-manager-ftp/id412448059)
 
 * [Skype](http://www.skype.com/intl/en/get-skype/on-your-computer/macosx/downloading/)
-
-* [ReadKit](https://itunes.apple.com/ru/app/readkit/id588726889)
 
 * [Pocket](http://getpocket.com/apps/desktop/)
 
@@ -115,15 +112,37 @@
 
 * [TeamView](http://www.teamviewer.com/ru/index.aspx)
 
-## Misc
+* [Telegram](https://itunes.apple.com/ru/app/telegram/id747648890?l=en&mt=12)
 
-* [Keka](http://www.kekaosx.com/ru/)
+* [VyprVPN](https://www.goldenfrog.com/vyprvpn)
+
+## System
+
+* [Macfusion](http://macfusionapp.org/)
+
+* [Battery Diag](https://itunes.apple.com/ru/app/battery-diag/id836505650)
+
+* [coconutBattery](http://www.coconut-flavour.com/coconutbattery/#idDownload)
+
+* [PCKeyboardHack](https://pqrs.org/macosx/keyremap4macbook/pckeyboardhack.html.en)
+
+* [KeyRemap4Mac](https://pqrs.org/macosx/keyremap4macbook/index.html.en)
+
+## Media
 
 * [MPlayerX](http://mplayerx.org/download.html)
 
 * [Spotify](https://www.spotify.com/us/download/mac/)
 
 * [Vox](https://itunes.apple.com/ru/app/vox/id461369673)
+
+* [Popcorn time](http://popcorn-time.se/)
+
+* [VLC](http://www.videolan.org/vlc/)
+
+## Misc
+
+* [Keka](http://www.kekaosx.com/ru/)
 
 * [CleanMyMac](http://macpaw.com/cleanmymac)
 
@@ -133,10 +152,6 @@
 
 * [BookReader](https://itunes.apple.com/app/bookreader/id448943039)
 
-* [Battery Diag](https://itunes.apple.com/ru/app/battery-diag/id836505650)
-
-* [PCKeyboardHack](https://pqrs.org/macosx/keyremap4macbook/pckeyboardhack.html.en)
-
-* [KeyRemap4Mac](https://pqrs.org/macosx/keyremap4macbook/index.html.en)
-
 * [Anki](http://ankisrs.net/)
+
+* [Radiant Player](http://radiant-player.github.io/radiant-player-mac/)
