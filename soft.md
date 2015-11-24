@@ -2,61 +2,61 @@
 
 ## Development
 
-* [Sublime Text 3](http://www.sublimetext.com/3)
+* Sublime Text 3
 
-* [Package Control](http://wbond.net/sublime_packages/package_control)
+	* [Package Control](http://wbond.net/sublime_packages/package_control)
 
-* [Emmet](https://github.com/sergeche/emmet-sublime)
+	* [Emmet](https://github.com/sergeche/emmet-sublime)
 
-* [Hayaku Bundle](https://github.com/hayaku/hayaku)
+	* [Hayaku Bundle](https://github.com/hayaku/hayaku)
 
-* [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements)
+	* [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements)
 
-* [WebStorm](http://www.jetbrains.com/webstorm/)
+* WebStorm
 
 * [GitBox](https://itunes.apple.com/us/app/gitbox/id403388357)
 
-* [Dash](https://itunes.apple.com/ru/app/dash-docs-snippets/id458034879?mt=12)
+* Dash
 
 * [Color Snapper](https://itunes.apple.com/ru/app/colorsnapper/id418176775?mt=12)
 
-* [FontPrep](http://fontprep.com/)
+* FontPrep
 
-* [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+* VirtualBox
 
 * [Cakebrew](https://www.cakebrew.com/)
 
-* [SourceTree](http://www.sourcetreeapp.com/)
+* SourceTree
 
 * [Docker](https://www.docker.com/)
 
 * [JSON Accelerator](https://itunes.apple.com/ru/app/json-accelerator/id511324989?l=en&mt=12)
 
-* [Audacity](http://audacityteam.org/download/?lang=ru)
+* Audacity
 
 * [Versions](http://versionsapp.com/)
 
 ## Writing
 
-* [Mou](http://mouapp.com/)
+* Mou
 
 ## Productivity
 
-* [Alfred](https://itunes.apple.com/ru/app/alfred/id405843582?mt=12)
+* Alfred
 
-* [Bartender](https://sites.fastspring.com/macbartender/instant/bartender)
+* Bartender
 
 * [Monosnap](https://itunes.apple.com/ru/app/monosnap/id540348655?mt=12)
 
-* [Dropbox](https://www.dropbox.com/install)
+* Dropbox
 
-* [Copy](https://www.copy.com/install/)
+* Copy
 
 * [Alternote](https://itunes.apple.com/ru/app/alternote-beautiful-note-taking/id974971992?l=en&mt=12)
 
 * [Things](https://itunes.apple.com/ru/app/things/id407951449?mt=12)
 
-* [1Password](https://itunes.apple.com/ru/app/1password-password-manager/id443987910?mt=12)
+* 1Password
 
 * [Fantastical](https://itunes.apple.com/ru/app/fantastical/id435003921?mt=12)
 
@@ -66,29 +66,27 @@
 
 * [Typography Keyboard Layout](http://ilyabirman.net/typography-layout/)
 
-* [iTerm2](http://www.iterm2.com/#/section/home)
+* iTerm2
 
-* [F.lux](http://justgetflux.com/)
+* F.lux
 
 * [Pomodoro One](https://itunes.apple.com/us/app/pomodoro-one/id907364780)
 
 * [Better Rename 9](https://itunes.apple.com/ru/app/better-rename-9/id414209656?l=en&mt=12)
 
-* [Toggl](https://toggl.com/)
+* Toggl
 
-* [XMind](https://www.xmind.net/)
+* XMind
 
 ## Graphics
 
 * Adobe Photoshop
 
-* [LilyView](http://lilyviewapp.com/)
-
-* [PNGyu](http://nukesaq88.github.io/Pngyu/)
+* PNGyu
 
 * [ImageAlpha](http://pngmini.com/)
 
-* [ImageOptim](http://imageoptim.com/)
+* ImageOptim
 
 * [ImageMagick](http://www.imagemagick.org/script/binary-releases.php#macosx)
 
@@ -96,21 +94,21 @@
 
 ## Network
 
-* [Chrome](https://www.google.com/intl/en/chrome/browser/)
+* Chrome
 
-* [Firefox](http://www.mozilla.org/en-US/firefox/new/)
+* Firefox
 
-* [Opera](http://www.opera.com/download/)
+* Opera
 
 * [ForkLift](https://itunes.apple.com/ru/app/forklift-file-manager-ftp/id412448059)
 
-* [Skype](http://www.skype.com/intl/en/get-skype/on-your-computer/macosx/downloading/)
+* Skype
 
 * [Pocket](http://getpocket.com/apps/desktop/)
 
 * [Tweetbot](https://itunes.apple.com/ru/app/tweetbot-for-twitter/id557168941)
 
-* [TeamView](http://www.teamviewer.com/ru/index.aspx)
+* TeamView
 
 * [Telegram](https://itunes.apple.com/ru/app/telegram/id747648890?l=en&mt=12)
 
@@ -130,9 +128,9 @@
 
 ## Media
 
-* [MPlayerX](http://mplayerx.org/download.html)
+* MPlayerX
 
-* [Spotify](https://www.spotify.com/us/download/mac/)
+* Spotify
 
 * [Vox](https://itunes.apple.com/ru/app/vox/id461369673)
 
@@ -142,7 +140,7 @@
 
 ## Misc
 
-* [Keka](http://www.kekaosx.com/ru/)
+* Keka
 
 * [CleanMyMac](http://macpaw.com/cleanmymac)
 
