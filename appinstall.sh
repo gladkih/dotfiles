@@ -46,10 +46,12 @@ brew cask install bartender
 rew cask install 1password
 brew cask install toggldesktop
 brew cask install xmind
+brew cask install paragon-ntfs
 
 #Browsers
 brew cask install firefox
 brew cask install google-chrome
+brew cask install chromium
 brew cask install opera
 
 #Cloud drives
