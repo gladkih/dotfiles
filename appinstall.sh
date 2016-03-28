@@ -43,7 +43,7 @@ brew cask install flux
 brew cask install alfred
 brew cask install karabiner
 brew cask install bartender
-rew cask install 1password
+brew cask install 1password
 brew cask install toggldesktop
 brew cask install xmind
 brew cask install paragon-ntfs
