@@ -4,12 +4,6 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until `.osx` has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# Set standby delay to 24 hours (default is 1 hour)
-sudo pmset -a standbydelay 86400
-
-# Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
-
 # Menu bar: hide the Time Machine, Volume, and User icons
 for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
 	defaults write "${domain}" dontAutoLoad -array \
@@ -41,6 +35,23 @@ defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
 # Disable Notification Center and remove the menu bar icon
 launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
+
+###############################################################################
+# Activity Monitor                                                            #
+###############################################################################
+
+# Show the main window when launching Activity Monitor
+defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
+
+# Visualize CPU usage in the Activity Monitor Dock icon
+defaults write com.apple.ActivityMonitor IconType -int 5
+
+# Show all processes in Activity Monitor
+defaults write com.apple.ActivityMonitor ShowCategory -int 0
+
+# Sort Activity Monitor results by CPU usage
+defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
+defaults write com.apple.ActivityMonitor SortDirection -int 0
 
 ###############################################################################
 # SSD-specific tweaks                                                         #
@@ -83,6 +94,9 @@ defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 # Follow the keyboard focus while zoomed in
 defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
+# Disable press-and-hold for keys in favor of key repeat.
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
@@ -106,9 +120,22 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 # Enable HiDPI display modes (requires restart)
 sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 
+# Disable and kill Dashboard
+# Can be reverted with:
+# defaults write com.apple.dashboard mcx-disabled -boolean NO; killall Doc
+defaults write com.apple.dashboard mcx-disabled -boolean YES; killall Dock
+
+# Disable icons on the Desktop
+# This will "hide" all the files on the Desktop, but one can still access
+# the files through Finder. Makes things look pretty.
+# defaults write com.apple.finder CreateDesktop -bool false && killall Finder
+
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################
+
+# Show the ~/Library folder.
+chflags nohidden ~/Library
 
 # Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
 defaults write com.apple.finder QuitMenuItem -bool true
@@ -145,9 +172,8 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 # Avoid creating .DS_Store files on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
-# Use column view in all Finder windows by default
-# Four-letter codes for the other view modes: `Nlsv`, `icnv`, `clmv`, `Flwv`
-defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
+# Always open everything in Finder's column view. This is important.
+defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 
 # Disable the warning before emptying the Trash
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
@@ -160,6 +186,18 @@ defaults write com.apple.dashboard mcx-disabled -boolean YES
 
 # Hide folders
 chflags nohidden ~/Public/ ~/Desktop/ ~/Applications/
+
+# Allow text-selection in Quick Look
+defaults write com.apple.finder QLEnableTextSelection -bool true
+
+# Disable the warning before emptying the Trash
+defaults write com.apple.finder WarnOnEmptyTrash -bool false
+
+# Disable Resume system-wide
+defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
+
+# Disable the crash reporter
+defaults write com.apple.CrashReporter DialogType -string "none"
 
 ###############################################################################
 # Terminal & iTerm 2                                                          #
@@ -177,4 +215,7 @@ for app in "Address Book" "Calendar" "Contacts" "Dashboard" "Dock" "Finder" \
         "Transmission" "Twitter" "iCal"; do
         killall "${app}" > /dev/null 2>&1
 done
+
+sleep 1
+
 echo "Done. Note that some of these changes require a logout/restart to take effect."
