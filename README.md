@@ -11,32 +11,32 @@
 7. Disable guest user
 8. Login options
 	- Name and password
-9. Accessibility — Zoom — Use scroll gesture
+9. Accessibility → Zoom → Use scroll gesture
+10. Change language on cmd+space 
+11. Show battery percentage
+12. Turn off capitalising
+13. Turn off autospelling
+14. Trackpad sensitivity
+15. Tap to click
+16. Language & region → advanced → grouping, decimal .
 
 
 ## Finder
 
 1. Hide and sort sidebar icons
-2. Remove Remote Dics, hide tags
+2. Remove Remote Disc, hide tags
 3. Search the current folder
 4. Icons View:
 	- Sort Name
-	- Size 16
+	- Size 15
 	- Grid Max
 	- Label Right
 	- Use as Default
-5. Launch sublime from terminal:
-	`ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime`
 
 ## ColorSnapper
-
+s
 1. Alt+CMD+C
 2. CSS Hex
-
-## Parallels Desktop
-
-1. Show Parallels icon in menu bar: Off
-2. Virtual machines folder: ~/Applications/Parallels
 
 ## Clean My Mac
 
@@ -47,8 +47,3 @@
 
 1. Open links in background: On
 2. Round avatars: Off
-
-## Things
-
-1. View — Font size: Extra Large
-2. Things Cloud

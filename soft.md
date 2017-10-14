@@ -2,19 +2,8 @@
 
 ## Development
 
-* Sublime Text 3
-
-	* [Package Control](http://wbond.net/sublime_packages/package_control)
-
-	* [Emmet](https://github.com/sergeche/emmet-sublime)
-
-	* [Hayaku Bundle](https://github.com/hayaku/hayaku)
-
-	* [SideBarEnhancements](https://github.com/titoBouzout/SideBarEnhancements)
 
 * WebStorm
-
-* [GitBox](https://itunes.apple.com/us/app/gitbox/id403388357)
 
 * Dash
 
@@ -48,19 +37,16 @@
 
 * [Monosnap](https://itunes.apple.com/ru/app/monosnap/id540348655?mt=12)
 
-* Dropbox
-
-* Copy
-
 * [Alternote](https://itunes.apple.com/ru/app/alternote-beautiful-note-taking/id974971992?l=en&mt=12)
 
-* [Things](https://itunes.apple.com/ru/app/things/id407951449?mt=12)
+* [Notion](https://www.notion.so)
+
+* [Todoist](https://todoist.com)
 
 * 1Password
 
 * [Fantastical](https://itunes.apple.com/ru/app/fantastical/id435003921?mt=12)
 
-* [The Archive Browser](https://itunes.apple.com/ru/app/the-archive-browser/id510232205?l=en&mt=12)
 
 * [Day one](https://itunes.apple.com/us/app/day-one/id422304217?mt=12)
 
@@ -116,9 +102,6 @@
 
 ## System
 
-* [Macfusion](http://macfusionapp.org/)
-
-* [Battery Diag](https://itunes.apple.com/ru/app/battery-diag/id836505650)
 
 * [coconutBattery](http://www.coconut-flavour.com/coconutbattery/#idDownload)
 
