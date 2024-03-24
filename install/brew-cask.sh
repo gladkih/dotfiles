@@ -1,81 +1,70 @@
 #!/bin/bash
 echo "+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+"
 echo "Installing apps with brew cask"
-echo "version 1.1 by Maxim Gladkih"
+echo "version 1.2 by Maxim Gladkih"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 echo "Updating app lists"
 brew update
-brew cask update
+brew update --cask
 
 echo "Cask apps"
 apps=(
     #Archive
     keka
     #Develop
-    webstorm
+    # webstorm
     sourcetree
     visual-studio-code
-    mongodb
-    mongodb-compass
     iterm2
-    virtualbox
-    dash
-    zeplin
-    fontprep
-    color-oracle
     docker
+    wget
+    node
+    nvm
+    ffmpeg --with-libvpxss
+    coreutils
+    dnscrypt-proxy
+    vim
+    midnight-commander
+    nmap
+    openssl
     #Audio
     audacity
     kid3
     #Productivity
-    1password
-    flux
-    alfred
-    karabiner
-    bartender
-    xmind
-    paragon-ntfs
-    toggldesktop
-    rescuetime
+    browserosaurus
+    obsidian
+    karabiner-elements
+    hiddenbar
+    raycast
     #Browsers
-    yandex
     firefox
     google-chrome
-    chromium
-    opera
+    # chromium
     #Cloud drives
-    google-drive-file-stream
+    google-drive
+    onedrive
     #Instant Messengers
-    skype
-    adium
+    zoom
     slack
-    telegram
+    telegram-desktop
     viber
     #Game 
-    battle-net
+    # battle-net
     steam
-    openemu
+    # openemu
     #Media players
     spotify
     vlc
-    mplayerx
-    google-music-manager
-    all2mp3
-    vox
-    plex-media-server
-    lastfm
-    radiant-player
     #Graphics
     xnviewmp
     pngyu
     imageoptim
     #Soft
     coconutbattery
-    cleanmymac
+    mas
 )
 
-brew cask install "${apps[@]}"
+brew install --cask "${apps[@]}"
 
 #Cleanup
-brew cleanup --force
-rm -f -r /Library/Caches/Homebrew/*
+brew cleanup
